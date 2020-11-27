@@ -3,27 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazyInit</string>
+	<string>lazyTableView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private lazy var &lt;#Name#&gt;: &lt;#UIView#&gt; = {
-        &lt;#code#&gt;
-        return &lt;#View#&gt;
+	<string>private lazy var tableview: UITableView = {
+        let v = UITableView()
+        v.separatorStyle = .none
+        v.backgroundColor = &lt;#Color#&gt;
+        v.estimatedRowHeight = &lt;#height#&gt;
+        v.delegate = self
+        v.dataSource = self
+        v.register(UITableViewCell.self, forCellReuseIdentifier: &lt;#identifier#&gt;)
+        return v
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B3F5771C-659D-4E55-A8FA-5A5A969B4B9D</string>
+	<string>CB37A4C9-2A65-4D77-B31A-B59E1833B9F8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazy init</string>
+	<string>lazy TableView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
